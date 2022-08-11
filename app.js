@@ -5,6 +5,15 @@ const h3 = document.createElement("h3");
 const div = document.createElement("div");
 const divH1 = document.createElement("h1");
 const divP = document.createElement("p");
+const btn = document.querySelector("#btn");
+const btn2 = document.querySelector("#btn2");
+
+btn.onclick = () => alert("Hello World");
+
+btn2.addEventListener("click", (e) => {
+  alert("it will turn blue!");
+  e.target.style.background = "blue";
+});
 
 content.classList.add("content");
 p.style = "color : red";
